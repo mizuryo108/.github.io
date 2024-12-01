@@ -1,122 +1,51 @@
-<!DOCTYPE html>
-<html lang="ja">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自己紹介 | あなたの名前</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-        }
-
-        header {
-            background: #007BFF;
-            color: #fff;
-            padding: 1.5em 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 800px;
-            margin: 2em auto;
-        }
-
-        section {
-            margin-bottom: 2em;
-        }
-
-        h2 {
-            border-bottom: 2px solid #007BFF;
-            display: inline-block;
-            padding-bottom: 0.3em;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            background: #f4f4f4;
-            margin: 0.5em 0;
-            padding: 0.5em;
-            border-radius: 5px;
-        }
-
-        footer {
-            text-align: center;
-            margin: 2em 0;
-            font-size: 0.9em;
-            color: #777;
-        }
-
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <header>
-        <h1>Ryota Shimizu</h1>
-        <p>このページでは私の自己紹介をします。</p>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-600 text-white text-center py-8">
+        <h1 class="text-4xl font-bold">こんにちは、私は〇〇です！</h1>
+        <p class="text-lg mt-2">このページでは私の自己紹介をします。</p>
     </header>
 
-    <div class="container">
-        <!-- プロフィールセクション -->
-        <section id="profile">
-            <h2>プロフィール</h2>
-            <p>愛知工業大学 情報科学部 情報科学科 コンピュータシステム専攻 自然言語処理学研究室所属の清水綾太です。
-                趣味はウッドベースで、サークルでコンボジャズを演奏しています。</p>
+    <div class="max-w-4xl mx-auto my-10 px-4">
+        <section id="profile" class="mb-8">
+            <h2 class="text-2xl font-semibold border-b-2 border-blue-600 inline-block pb-1">プロフィール</h2>
+            <p class="mt-4">私は〇〇（あなたの名前）です。現在、〇〇（職業/学生など）として活動しています。趣味は〇〇で、特に〇〇を楽しんでいます。</p>
         </section>
 
-        <!-- スキルセクション -->
-        <section id="skills">
-            <h2>スキル</h2>
-            <ul>
-                <li>プログラミング言語: HTML, CSS, JavaScript</li>
-                <li>その他: チームでのプロジェクト管理、クリエイティブな問題解決</li>
+        <section id="skills" class="mb-8">
+            <h2 class="text-2xl font-semibold border-b-2 border-blue-600 inline-block pb-1">スキル</h2>
+            <ul class="mt-4 space-y-2">
+                <li class="bg-white shadow-sm p-4 rounded-lg">プログラミング言語: HTML, CSS, JavaScript</li>
+                <li class="bg-white shadow-sm p-4 rounded-lg">デザインツール: Photoshop, Figma</li>
+                <li class="bg-white shadow-sm p-4 rounded-lg">その他: チームでのプロジェクト管理、クリエイティブな問題解決</li>
             </ul>
         </section>
 
-        <!-- ポートフォリオセクション -->
-        <section id="portfolio">
-            <h2>ポートフォリオ</h2>
-            <ul>
-                <li><a href="https://www.vivivit.com/mizuryo108" target="_blank">ViViViT(ビビビット)</a></li>
-                <li><a href="https://example.com/project2" target="_blank">プロジェクト2: サイト名または簡単な説明</a></li>
+        <section id="portfolio" class="mb-8">
+            <h2 class="text-2xl font-semibold border-b-2 border-blue-600 inline-block pb-1">ポートフォリオ</h2>
+            <ul class="mt-4 space-y-2">
+                <li class="bg-white shadow-sm p-4 rounded-lg"><a href="https://example.com/project1"
+                        class="text-blue-600 hover:underline" target="_blank">プロジェクト1: サイト名または簡単な説明</a></li>
+                <li class="bg-white shadow-sm p-4 rounded-lg"><a href="https://example.com/project2"
+                        class="text-blue-600 hover:underline" target="_blank">プロジェクト2: サイト名または簡単な説明</a></li>
             </ul>
         </section>
 
-        <!-- お問い合わせセクション -->
-        <section id="contact">
-            <h2>お問い合わせ</h2>
-            <p>ご興味を持っていただけた方は、以下の方法でご連絡ください:</p>
-            <ul>
-                <li><a href="mailto:k22066kk@aitech.ac.jp">メール: k22066kk@aitech.ac.jp</a></li>
-                <li><a href="https://twitter.com/yourusername" target="_blank">Twitter: @yourusername</a></li>
+        <section id="contact" class="mb-8">
+            <h2 class="text-2xl font-semibold border-b-2 border-blue-600 inline-block pb-1">お問い合わせ</h2>
+            <p class="mt-4">ご興味を持っていただけた方は、以下の方法でご連絡ください:</p>
+            <ul class="mt-4 space-y-2">
+                <li class="bg-white shadow-sm p-4 rounded-lg"><a href="mailto:your-email@example.com"
+                        class="text-blue-600 hover:underline">メール: your-email@example.com</a></li>
+                <li class="bg-white shadow-sm p-4 rounded-lg"><a href="https://twitter.com/yourusername"
+                        class="text-blue-600 hover:underline" target="_blank">Twitter: @yourusername</a></li>
             </ul>
         </section>
     </div>
 
-    <footer>
-        <p>&copy; 2024 Ryota Shimizu | All Rights Reserved</p>
+    <footer class="text-center text-sm text-gray-500 py-4">
+        <p>&copy; 2024 あなたの名前 | All Rights Reserved</p>
     </footer>
 </body>
-
-</html>
