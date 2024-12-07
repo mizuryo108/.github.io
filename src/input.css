@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* styles.css */
+.custom-shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.custom-border {
+    border: 2px dashed #4a5568;
+}
+
+.custom-padding {
+    padding: 10px 15px;
+}
+
+
 @layer utilities {
     .responsive-padding {
         padding: 10px;
@@ -17,5 +31,17 @@
         .responsive-padding {
             padding: 40px;
         }
+    }
+}
+
+@layer utilities {
+    .dark-mode-text {
+        color: #ffffff;
+        /* 白 */
+    }
+
+    .dark-mode-bg {
+        background-color: #1a202c;
+        /* ダークグレー */
     }
 }
