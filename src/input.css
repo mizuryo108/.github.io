@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .responsive-padding {
+        padding: 10px;
+    }
+
+    @media (min-width: 768px) {
+        .responsive-padding {
+            padding: 20px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .responsive-padding {
+            padding: 40px;
+        }
+    }
+}
